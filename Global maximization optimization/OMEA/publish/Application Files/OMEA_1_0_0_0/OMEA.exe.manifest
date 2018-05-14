@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="OMEA.exe" version="1.0.0.0" publicKeyToken="60c0f0810bbf909d" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="OMEA" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="OMEA.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MathNet.Numerics.dll" size="1144320">
+      <assemblyIdentity name="MathNet.Numerics" version="3.2.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>hocJpG5roo5tsVjwjgvs59p+qoA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OMEA.exe" size="225280">
+      <assemblyIdentity name="OMEA" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>1GEWwho4zqzJ589bc5+gWmOpmn8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="OMEA.exe.config" size="144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cpzNzlRjZspwKGLNlX6RAlU3880=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=mahdi-pc\Mahdi" issuerKeyHash="e388323efe69236390ebefd66b5c22d20e07ac55" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>stMK3fCCr4gKqNG1gdmRkaBfXBc=</DigestValue></Reference></SignedInfo><SignatureValue>ZnLQQ0+Molm11Mr+48o5MiF1a/YLHvrp8g25YMMPiTZ6ZeRv8qWQYJQroUxa+gICJYfxOTYzWHVjgJd/wK3qn0vq8Hc58ouocgLPm/HhhQ/tPANfLr+W02POZGTm15j0HVTvpXdZWt+1xyYKCd1Vp5iL0rNBf6KKevSGfpVU1i4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yqXmU2zYMAm6Kv3czy+k7GgVCCgT2DVAL2UjGBD5nsSAlZPh+uCckox/VBWeU3ABq9qTfabVrnK5U1ClbPTG6JcFj9rePQDe7ZNYjnN/KeHhGlJ9T+nwK//QBCvKs3Jeok9LNfcLBkyxxShtCmomLH73Eo23X4O+XACknbDPSBc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="175c5fa09191d981b5d1a80a88af82f0dd0ad3b2" Description="" Url=""><as:assemblyIdentity name="OMEA.exe" version="1.0.0.0" publicKeyToken="60c0f0810bbf909d" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=mahdi-pc\Mahdi</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>yYFa7ixPl9VbDrINiF+/aAsVr7A=</DigestValue></Reference></SignedInfo><SignatureValue>TDYcExqQUGSbJJGZ+VoadFJ/Ws1T6OQ1WZV9qMjI5hadgStl1kbzb5ywykW9xP6bITuOdBO6Mu2gu1OEMfdA8NGmIiEgm4AsFZAx6k05gS9x0MdME8jji1FxTtFUqzcX8b5qGBkcbhbhZue/Sy5KRk57tyvGRiCmLfLI/0Gnrdo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yqXmU2zYMAm6Kv3czy+k7GgVCCgT2DVAL2UjGBD5nsSAlZPh+uCckox/VBWeU3ABq9qTfabVrnK5U1ClbPTG6JcFj9rePQDe7ZNYjnN/KeHhGlJ9T+nwK//QBCvKs3Jeok9LNfcLBkyxxShtCmomLH73Eo23X4O+XACknbDPSBc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQV2b6jXsVOLVFYKN8GvtpHTANBgkqhkiG9w0BAQUFADAnMSUwIwYDVQQDHhwAbQBhAGgAZABpAC0AcABjAFwATQBhAGgAZABpMB4XDTE0MTExNzE5NDkyMVoXDTE1MTExODAxNDkyMVowJzElMCMGA1UEAx4cAG0AYQBoAGQAaQAtAHAAYwBcAE0AYQBoAGQAaTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAyqXmU2zYMAm6Kv3czy+k7GgVCCgT2DVAL2UjGBD5nsSAlZPh+uCckox/VBWeU3ABq9qTfabVrnK5U1ClbPTG6JcFj9rePQDe7ZNYjnN/KeHhGlJ9T+nwK//QBCvKs3Jeok9LNfcLBkyxxShtCmomLH73Eo23X4O+XACknbDPSBcCAwEAATANBgkqhkiG9w0BAQUFAAOBgQAKC5P216uezqMUPcq/BkEPA6XDRd3ORe/03GlKnnx3RQDCI9MgIiDy2lSaQCyxFAVRUmLVXS5ELIRmDOkNZvyVgiXzvQxz+VlQHB9NOZzD0Dwd+6nV5LLHC0Is2epzSyF9hYw3T32V/kcBWYlGvLKPW5Dv+R+0ccYIQ91CSZoPSA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
